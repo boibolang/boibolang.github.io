@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+:root
+{
+    --mainColor:crimson;
+    --white:#ffffff;
+    --whiteSmoke:#c4c3ca;
+}
+
+body
+{
+    font-family: 'Lato' , sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    background-color: var(--white);
+}
+
+a
+{
+  padding: 5px 8px;
+  color: var(--mainColor);
+  border-radius: 3px;
+}
+
+a:hover
+{
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--mainColor);
+  color: var(--whiteSmoke);
+}
+
+.hidden
+{
+  display: none;
+}
