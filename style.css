@@ -1,0 +1,48 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #404040;
+  font-family: 'Raleway', sans-serif;
+  color: #f4f4f4;
+}
+
+/* Reusable */
+.py-1 {
+  margin: 10px auto
+}
+
+header, main {
+  text-align: center;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+table, td {
+  border: 1px solid #f4f4f4;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  height: 30px;
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+a:hover {
+  color: coral;
+}
