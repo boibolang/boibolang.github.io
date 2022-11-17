@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Utility */
+:root {
+  --color-dark-cyan: hsl(185, 75%, 39%);
+  --color-dark-blue: hsl(229, 23%, 23%);
+  --color-grayish-blue: hsl(227, 10%, 46%);
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--color-dark-cyan);
+}
+
+.container .upper {
+  background: url(./images/bg-pattern-top.svg) no-repeat center center/cover;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  opacity: 0.5;
+  top: 100px;
+  left: 100px;
+}
+
+main {
+  height: 320px;
+  width: 300px;
+  margin: 200px auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* TOP SECTION */
+
+main .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .top .bg {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .top .people {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+}
+
+main .top .bio {
+  position: relative;
+  top: -40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* BOTTOM SECTION */
+
+main .bottom {
+  border-top: 1px solid var(--color-grayish-blue);
+  position: relative;
+  top: -20px;
+  padding-top: 20px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: 'follower like photo';
+  
+}
+
+main .bottom .follower {
+  grid-area: follower;
+  text-align: center;
+}
+
+main .bottom .like {
+  grid-area: like;
+  text-align: center;
+}
+
+main .bottom .photo {
+  grid-area: photo;
+  text-align: center;
+}
+
+main .bold {
+  font-weight: bold;
+}
+
+main .gray {
+  color: var(--color-grayish-blue);
+  font-weight: normal;
+}
+
+main .small {
+  font-size: 0.8rem;
+}
+
+main .smaller {
+  font-size: 0.6rem;
+}
